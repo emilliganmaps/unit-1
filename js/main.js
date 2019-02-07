@@ -56,7 +56,7 @@ function addColumns(cityPop){
             
     	} else {
     		var citySize;
-            
+            //label city size based on city population
     		if (cityPop[i-1].population < 100000){
     			citySize = 'Small';
     		} else if (cityPop[i-1].population < 500000){
@@ -72,7 +72,7 @@ function addColumns(cityPop){
 
 //add capability to interact with table
 function addEvents(){
-
+    //mouseover web page to change the text color randomly
 	$(this).mouseover(function(){
         var color = 'rgb(';
         for (var i=0; i<3; i++){
@@ -86,7 +86,7 @@ function addEvents(){
 
         $('table').css('color', color);
     });
-    
+    //click the text to create a click alert
 	function clickme(){
 		alert('Hey, you clicked me!');
 	}
